@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# Data and Models
+# data/*.csv # Keeping data if small (1.1MB)
+models/
+*.zip
+*.pkl
+
+# IDEs
+.vscode/
+.idea/
+
+# Misc
+.DS_Store
+.ipynb_checkpoints/
+.gemini/
