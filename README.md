@@ -1,30 +1,26 @@
-# DRL Trading Agent Assignment
+# TradingAgentCI
 
-Project based on `gym-anytrading` for the Deep Reinforcement Learning course (8th Semester).
+Deep reinforcement learning agents for financial trading environments, built on
+[gym-anytrading](https://github.com/AminRezaei0x443/gym-anytrading) and Gymnasium.
 
-## Project Structure
-- `Assignment/`: Contains the original assignment PDF and its text version.
-- `data/`: Placeholder for custom datasets.
-- `models/`: Saved trained agents.
-- `reports/`: Documentations and figures.
-- `scripts/`: Modular Python scripts.
-- `baseline_agent.py`: Initial test script using A2C.
+Course project for the Deep Reinforcement Learning track: train and evaluate
+DRL agents (A2C baseline first, expanding from there) on trading environments,
+with a modular script layout so experiments stay reproducible.
 
-## Requirements
-- Gymnasium
-- gym-anytrading
-- Stable-Baselines3
-- QuantStats
-- Matplotlib, Pandas, Numpy
+## Structure
 
-## Setup
-The environment is setup in the `venv` folder. To use it:
-```bash
-source venv/bin/activate
-```
+- `baseline_agent.py` — initial A2C agent on the default trading environment
+- `scripts/` — modular training / evaluation scripts
+- `data/` — datasets used by the environments
+- `reports/` — documentation and result figures
+- `Assignment/` — the original assignment specification
 
-## First Steps
-1. Run `python baseline_agent.py` to verify the installation and see a basic agent in action.
-2. Experiment with different algorithms (PPO, DQN).
-3. Add technical indicators (SMA, RSI) to the observation space to improve performance.
-4. Compare performance between Stocks and Forex environments.
+## Stack
+
+- Python, PyTorch (via Stable-Baselines3 A2C)
+- Gymnasium + gym-anytrading environments
+
+## Status
+
+Baseline stage: A2C agent training and evaluation running end to end.
+Next: custom feature engineering on the observation space and a PPO comparison run.
